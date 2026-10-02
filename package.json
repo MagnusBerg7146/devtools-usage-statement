@@ -1,0 +1,21 @@
+{
+  "name": "devtools-usage-statement",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/statement_server.ts",
+    "start": "tsx src/statement_server.ts",
+    "send:example": "tsx scripts/send_example.ts",
+    "test": "tsx --test test/statement_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tsx": "^4.19.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
